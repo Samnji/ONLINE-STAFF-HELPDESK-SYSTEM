@@ -1,0 +1,111 @@
+{% extends 'personal/Main Page.html' %}
+{% block content%}
+           
+            <style type="text/css">
+        
+            .table{
+                font-size: 23px; 
+                text-align: center;
+                width: 205%;
+                margin: auto;
+                
+            }
+            .table tr:nth-child(odd){
+                background: #B8CAE4
+
+            }
+
+            .table tr:nth-child(even){
+                background: #dae5f4
+
+            }
+            th{
+                background-color: #337ab7;  
+                color: white;
+            }
+            .display_table{
+                border-bottom-right-radius: 20px;
+                font-size: 50px;
+                padding-left: 20px;
+                padding-right: 750px;
+                padding-bottom: 40px;
+                box-shadow: 12px 12px 20px 6px #2e6da4;
+            }
+            .heading{
+                font-family: helvetica;
+                color: #337ab7;
+                font-size: 50px;
+                text-align: center;
+                width: 1000px;
+                text-shadow: 6px 6px 6px #c9c6c6;
+                display: block;
+                font-weight: bolder;
+            }
+
+            .sidenav{
+                height: 1000px;
+                width: 300px;
+                z-index: 1;
+                position: static;
+                top: 20;
+                left: 5;
+                background-color: #111;
+                overflow-x: hidden;
+                padding-top: 10px;
+
+
+            }
+
+            .sidenav a{
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+
+            }
+
+            .sidenav a:hover{
+                color: #f1f1f1;
+            }
+
+
+            .main{
+                
+                padding: 0px 10px;
+
+            }
+
+    </style>
+            
+                <div class="main">
+                     <div class="heading">{{heading}}</div>
+                                <div class="display_table">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Staff Role</th>
+                                                <th>Gender</th>
+                                            </tr>
+                                        </thead>
+                                        {% for instance in queryset %}
+                                            <tr>
+                                                <td>{{ instance.No }}</td>
+                                                <td>{{ instance.F_Name }}</td>
+                                                <td>{{ instance.L_Name }}</td>
+                                                <td>{{ instance.Staff_Role }}</td>
+                                                <td>{{ instance.Gender }}</td>
+                                            </tr>
+                                        {% endfor %}
+                                        
+                                    </table>
+                                </div>
+                </div>
+           
+
+ {% endblock %}               
+                
+

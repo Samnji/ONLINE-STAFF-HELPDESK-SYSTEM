@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ONLINE STAFF HELPDESK SYSTEM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7COswald:400,500,700"
+        rel="stylesheet">
+
+    {% load static %}
+    
+    <!-- Bootstrap Stylesheet -->
+    <link type="text/css" rel="stylesheet"  href="{% static 'personal/css/bootstrap-4.4.1.min.css' %}"/>
+
+    <!-- Font Awesome Stylesheet -->
+    <link type="text/css" rel="stylesheet"  href="{% static 'personal/css/font-awesome.min.css' %}"/>
+
+    <!-- Custom Stylesheets -->
+    <link type="text/css" rel="stylesheet"  href="{% static 'personal/css/style.css' %}"/>
+    <link type="text/css" rel="stylesheet"  id="cpswitch"   href="{% static 'personal/css/blue.css' %}"/>
+    <link type="text/css" rel="stylesheet"  href="{% static 'personal/css/responsive.css' %}"/>
+
+    <!-- Owl Carousel Stylesheet -->
+    <link type="text/css" rel="stylesheet"  href="{% static 'personal/css/owl.carousel.css' %}"/>
+    <link type="text/css" rel="stylesheet"  href="{% static 'personal/css/owl.theme.css' %}"/>
+    <style type="text/css">
+        
+            .table{
+                font-size: 23px; 
+                text-align: center;
+                width: 95%;
+                margin: auto;
+                
+            }
+            .table tr:nth-child(odd){
+                background: #B8CAE4
+
+            }
+
+            .table tr:nth-child(even){
+                background: #dae5f4
+
+            }
+            th{
+                background-color: #337ab7;  
+                color: white;
+            }
+            .display_table{
+                border-bottom-right-radius: 20px;
+                font-size: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 20px;
+                box-shadow: 12px 12px 20px 6px #2e6da4;
+            }
+            .heading{
+                font-family: helvetica;
+                color: #337ab7;
+                font-size: 50px;
+                text-align: center;
+                width: 1000px;
+                text-shadow: 6px 6px 6px #c9c6c6;
+                display: block;
+                font-weight: bolder;
+            }
+
+            .sidenav{
+                height: 1000px;
+                width: 300px;
+                z-index: 1;
+                position: static;
+                top: 20;
+                left: 5;
+                background-color: #111;
+                overflow-x: hidden;
+                padding-top: 10px;
+
+
+            }
+
+            .sidenav a{
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+
+            }
+
+            .sidenav a:hover{
+                color: #f1f1f1;
+            }
+
+
+            .main{
+                
+                padding: 0px 10px;
+
+            }
+
+    </style>
+
+</head>
+
+
+<body id="homepage-3">
+
+    
+
+        <div id="header-bottom">
+            <nav class="navbar navbar-light navbar-expand-xl my-navbar" id="mynavbar-3">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand"><span>Staff Helpdesk</span>System</a>
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar1">
+                                <span class="fa fa-bars"></span>
+                            </button>
+                        <div class="header-search d-xl-none d-block d-xl-none d-block">
+                            <a href="javascript:void(0)" class="search-button"><span><i
+                                        class="fa fa-search"></i></span></a>
+                        </div>
+                    </div><!-- end navbar-header -->
+
+                    <div class="collapse navbar-collapse" id="myNavbar1">
+                        <ul class="nav navbar-nav ml-auto">  
+                            {% if user.is_authenticated %}
+                            <li class="nav-item dropdown"><a href="#" class="nav-link" data-toggle="dropdown"><span class="link-line">{{user.first_name}}</span></a>
+                            </li>
+                            <li class="nav-item dropdown"><a href="{% url 'home' %}" class="nav-link" data-toggle="dropdown"><span class="link-line">Logout</span></a>
+                            </li>
+                            {% else %}
+                            <li class="nav-item dropdown"><a href="{% url 'login' %}" class="nav-link" ><span class="link-line">Login</span></a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </div><!-- end navbar collapse -->
+                </div><!-- end container -->
+            </nav><!-- end navbar -->
+        </div><!-- end header-bottom -->
+    </header>
+
+    <!--====================== WELCOME ====================-->
+    <section id="newsletter" class="banner-padding newsletter-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                    <h2>Welcome to Staff Helpdesk System</h2>
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="email" class="form-control input-lg" placeholder="search"
+                                    required />
+                                <span class="input-group-btn"><button
+                                        class="btn btn-lg btn-black">search</button></span>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end WELCOME -->
+
+    <main id="PAGES_CONTAINER" tabindex="-1">
+        <div id="SITE_PAGES">
+            <div class="_3tDhR">
+                <div id="c1dmp" class="_3akMP">
+                    <div class="_1vnzj">
+                        
+                    </div>
+                    <div class="_2egft">
+                        <div id="Containerc1dmp" class="_1Cfot">
+                            <div data-mesh-id="Containerc1dmpinlineContent" data-testid="inline-content" class="">
+                                <div data-mesh-id="Containerc1dmpinlineContent-gridContainer" data-testid="mesh-container-content">
+                                    <section id="comp-kr0od91q" class="JSM9k">
+                                        <div id="bgLayers_comp-kr0od91q" data-hook="bgLayers" class="X-jRX">
+                                            <div data-testid="colorUnderlay" class="mlsxv _22Lsw">
+                                                
+                                            </div>
+                                            <div id="bgMedia_comp-kr0od91q" class="_1J6n9">
+                                                
+                                            </div>
+                                        </div>
+                                        <div data-testid="columns" class="_2EoGw">
+                                            <div id="comp-kr0od91q1" class="_31Ne5">
+                                                <div id="bgLayers_comp-kr0od91q1" data-hook="bgLayers" class="X-jRX">
+                                                    <div data-testid="colorUnderlay" class="mlsxv _22Lsw">
+                                                            
+                                                    </div>
+                                                    <div id="bgMedia_comp-kr0od91q1" class="_1J6n9">
+                                                            
+                                                        </div>
+                                                        </div>
+                                                        <div data-mesh-id="comp-kr0od91q1inlineContent" data-testid="inline-content" class="">
+                                                            <div data-mesh-id="comp-kr0od91q1inlineContent-gridContainer" data-testid="mesh-container-content">
+                                                                
+                                                                            <section id="comp-kr0od91s1" class="JSM9k">
+                                                                                <div id="bgLayers_comp-kr0od91s1" data-hook="bgLayers" class="X-jRX">
+                                                                                    <div data-testid="colorUnderlay" class="mlsxv _22Lsw">
+                                                                                        
+                                                                                    </div>
+                                                                                    <div id="bgMedia_comp-kr0od91s1" class="_1J6n9">
+                                                                                        
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    <div data-testid="columns" class="_2EoGw">
+                                                                                        <div id="comp-kr0od91t" class="_31Ne5">
+                                                                                            <div id="bgLayers_comp-kr0od91t" data-hook="bgLayers" class="X-jRX _2AZ6T">
+                                                                                                <div data-testid="colorUnderlay" class="mlsxv _22Lsw">
+                                                                                                    
+                                                                                                </div>
+                                                                                                <wix-bg-media id="bgMedia_comp-kr0od91t" class="_3nV6U" data-container-id="comp-kr0od91t" data-page-id="c1dmp" data-bg-effect-name="BgParallax" style="width: 980px; height: 772px; left: 0px; top: 0px; will-change: transform; transform: translate3d(0px, 81.0781px, 0px);">
+            <div class="row">
+                <div class="col-sm-2">
+                    <br> 
+                    <br> 
+                    <div class="sidenav" >
+                        <a href="{% url 'tasks' %}">Tasks</a> 
+                        <a href="{% url 'duties' %}">Assign Duties</a>> 
+                        <a href="{% url 'issues' %}">Raise Issues</a>
+                        <a href="{% url 'staff' %}">Staff Members</a> 
+                    </div>
+                </div>
+                {% block content %}
+                {% endblock %}
+                
+            </div>
+
+               
+                
+
+
+                    
+    <!--========== FOOTER ==========-->
+    <section>
+        <div id="footer-top" class="banner-padding footer-2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 text-left" id="more-about">
+                        <h2 class="footer-heading"><span>Staff Helpdesk</span> System</h2>
+                        <p>Online Staff Helpdesk System is a Web based application that works within a centralized network. As should be used in a human resource system, this System is built for managing and computerizing the traditional database, duties allocation done by managers or supervisors. It maintains all staff details, duty details, area of work details. </p>
+                    </div><!-- end more-about -->
+
+                    <div class="col-12 col-md-6 col-lg-2 col-xl-2 text-left" id="useful-links">
+                        <h4 class="footer-heading">Useful</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="{% url 'tasks' %}">Tasks</a></li>
+                            <li><a href="{% url 'duties' %}">Assign Duties</a></li>
+                            <li><a href="{% url 'issues' %}">Raise Issues</a></li>
+                            <li><a href="{% url 'staff' %}">Staff Members</a></li>
+                        </ul>
+                    </div><!-- end useful-links -->
+
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 text-left" id="contact-us">
+                        <h4 class="footer-heading">Contact Us</h4>
+                        <ul class="list-unstyled">
+                            <li><span><i class="fa fa-map-marker"></i></span>
+                                <p>PO BOX 48048-00100, Nairobi</p>
+                            </li>
+                            <li><span><i class="fa fa-phone"></i></span>
+                                <p>+254717392108</p>
+                            </li>
+                            <li><span><i class="fa fa-envelope"></i></span>
+                                <p>info@staffhelpdesksystem.com</p>
+                            </li>
+                        </ul>
+
+                    </div><!-- end contact-us -->
+
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end footer-top -->
+
+        <div id="footer-bottom" class="footer-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="copyright">
+                        <p>© 2017 <a href="#">Staff Helpdesk System</a>. All rights reserved.</p>
+                    </div><!-- end columns -->
+
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="terms">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">Terms & Condition</li>
+                            <li class="list-inline-item">Privacy Policy</li>
+                        </ul>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end footer-bottom -->
+
+    </section><!-- end footer -->
+
+</body>
+
+</html>

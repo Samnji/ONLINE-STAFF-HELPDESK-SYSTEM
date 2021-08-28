@@ -1,0 +1,654 @@
+/* ----------------------------------------------------
+Theme Name:		KiswaCorporate - HTML & Bootstrap Template
+Version:		1.0.3
+Author:			KiswaCorporate
+------------------------------------------------------- */
+
+/* ======================================================
+	TABLE OF CONTENTS
+   ====================================================== */
+
+/**
+
+* 1.0	Settings
+* 1.1	Header
+* 1.2	Slider
+* 1.3	About Us
+* 1.4	Progress Blocks
+* 1.5	Services
+* 1.6	Workflow
+* 1.7	Banners
+* 1.8	Team
+* 1.9	Gallery
+* 1.10	Testimonials
+* 1.11	Latest Blog
+* 1.12	Pricing
+* 1.13	Newsletter
+* 1.14	Footer
+* 1.15	Page Cover
+* 1.16	About Pages
+* 1.17	Service Pages
+* 1.18	Team Page
+* 1.19	Extra Pages
+* 1.20	Contact Pages
+
+**/
+
+/* -----------------------------------------------------
+		Settings
+   ----------------------------------------------------- */
+
+body, html {
+    height: 100%;
+    position: relative;
+    font-size: 14px;
+}
+
+body {}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 18px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 12px
+}
+
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.btn {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 16px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+h1, h2, h3, h4, h5, #more-about h2 span, .s-info h3 span, .banner-4-heading h2 span:nth-of-type(2), .case-text h2 a, #testimonials-4 .reviewer-text small {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 0;
+    line-height: 1.3em;
+}
+
+a, p, ul, .btn, input, select, textarea, span, blockquote, #mynavbar-2 h4, #slider-3 .meta h1, #slider-4 .meta h1, .page-heading h2, .page-heading-2 h2, .page-heading-3 h2, #homepage-3 h2, #homepage-3 h3, #homepage-3 h4, .page-heading-4 h2, #skills .bar h4, #video-banner h2, #error-content h2, .price-table .p-table-heading .price, .footer-2 .footer-heading, .footer-2 #more-about h2 span, .about-banner-text h2, .about-intro-text h2 {
+    /*	font-weight:normal;*/
+    font-family: 'Lato', sans-serif;
+}
+
+p, ul {
+    line-height: 1.5em;
+    font-size: 15px;
+    word-spacing: 1px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+.page-heading-3 {
+    text-align: center;
+}
+
+.page-heading-3 h2 {
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.page-heading-3 .line-2 {
+    height: 6px;
+    width: 110px;
+    margin: 0 auto 45px;
+    transform: skewX(60deg);
+}
+
+.page-heading-3 p {
+    font-size: 18px;
+    font-weight: bold;
+    width: 700px;
+    margin: 0 auto 60px;
+}
+
+.page-heading-4 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-heading-4 h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.page-heading-4 .line-3 {
+    height: 6px;
+    width: 12%;
+    margin: 35px auto;
+}
+
+.page-heading-4 .line-3::after {
+    height: 6px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    content: '';
+    display: block;
+    float: right;
+}
+
+.page-heading-4 p {
+    width: 65%;
+    margin: 10px auto 25px;
+    font-size: 18px;
+}
+
+.side-bar-heading h2 {
+    font-size: 20px;
+}
+
+.side-bar-heading h2::after {
+    width: 15px;
+    margin: 20px 0px 30px;
+}
+
+.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.section-padding {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.banner-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.innerpage-section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.innerpage-banner-padding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.my-btn {
+    padding: 10px 30px;
+    margin-top: 35px;
+}
+
+.owl-carousel.custom-controls .owl-controls {
+    margin-top: 30px;
+}
+
+.owl-carousel.custom-controls .owl-controls .owl-buttons div {
+    font-size: 30px;
+    padding: 0px 15px;
+}
+
+.owl-carousel.custom-controls .owl-controls .owl-buttons div .fa {
+    margin-bottom: 5px;
+}
+
+#colorPanel {
+    z-index: 300;
+}
+
+/**************** MY-NAVBAR ***************/
+
+.my-navbar {
+    margin-bottom: 0px;
+    z-index: 200;
+}
+
+.my-navbar .navbar-header .navbar-brand {
+    text-transform: uppercase;
+}
+
+.my-navbar .navbar-header .navbar-brand p {
+    margin-top: 4px;
+}
+
+.my-navbar .nav>li>a {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 10px 15px !important;
+}
+
+.my-navbar .nav>li>a .fa {
+    margin-left: 8px;
+}
+
+.my-navbar .navbar-nav li .dropdown-menu {
+    padding: 0;
+    width: 100%;
+}
+
+.my-navbar .navbar-nav li .dropdown-menu li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.my-navbar .header-search {
+    float: right;
+    margin-top: 13px;
+    font-size: 18px;
+}
+
+.my-navbar .navbar-search-link>li:last-child a {
+    height: 34px;
+    width: 35px;
+    text-align: center;
+    padding: 0px;
+}
+
+
+/**************** HEADER-3 ****************/
+
+#header-3 #header-top #hdr-top-btn .btn {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 12px 50px;
+}
+
+#header-3 #header-top #info li {
+    letter-spacing: 0.04em;
+    font-size: 15.55px;
+    margin-right: 15px;
+}
+
+#header-3 #header-top #info li:last-child {
+    margin-right: 0px;
+}
+
+#header-3 #header-top #info li .fa {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+#mynavbar-3 .navbar-brand {
+    font-weight: 900;
+}
+
+#mynavbar-3 .navbar-nav>li>a {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#mynavbar-3 .nav>li:last-child a {
+    font-size: 20px;
+}
+
+
+/* -----------------------------------------------------
+	 	Newsletter
+   ----------------------------------------------------- */
+
+#newsletter .fa {
+    font-size: 35px;
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+#newsletter h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 20px 0px;
+}
+
+#newsletter hr {
+    width: 40px;
+}
+
+#newsletter form .form-group {
+    width: 610px;
+    margin: 30px auto 0px;
+}
+
+#newsletter form input {
+    font-size: 16px;
+}
+
+/************** NEWSLETTER-2 **************/
+
+#newsletter.newsletter-2 .fa {
+    font-size: 40px;
+    padding-top: 16px;
+}
+
+#newsletter.newsletter-2 h2 {
+    font-weight: 900;
+}
+
+#newsletter.newsletter-2 form .form-group {
+    width: 690px;
+}
+
+#newsletter.newsletter-2 form input, #newsletter.newsletter-2 form .btn {
+    height: 55px;
+    text-transform: uppercase;
+}
+
+#newsletter.newsletter-2 form input {
+    padding-left: 25px;
+}
+
+#newsletter.newsletter-2 form .btn {
+    padding: 8px 35px;
+}
+
+/* -----------------------------------------------------
+		Footer
+   ----------------------------------------------------- */
+
+#footer-top #more-about h2 {
+    font-size: 24px;
+}
+
+#more-about h2 span {
+    font-weight: 400;
+}
+
+#footer-top p, #footer-top ul li {
+    font-size: 15px;
+}
+
+#footer-top #more-about .social-links {
+    margin-top: 20px;
+}
+
+#footer-top a {
+    text-decoration: none;
+}
+
+#footer-top #more-about .social-links li a {
+    font-size: 18px;
+}
+
+#footer-top #more-about .social-links li {
+    padding-right: 20px;
+}
+
+#footer-top .footer-heading {
+    font-size: 24px;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#footer-top #tweets ul li {
+    margin-bottom: 20px;
+}
+
+#footer-top #tweets ul li .tweet {
+    margin-bottom: 0px;
+}
+
+#footer-top #tweets ul li .tweet .fa {
+    font-size: 19px;
+    margin-right: 5px;
+}
+
+#footer-top #tweets ul li .date {
+    font-size: 12px;
+}
+
+#footer-top #useful-links ul li {
+    margin-bottom: 8px;
+}
+
+#footer-top #useful-links ul li:last-child, #footer-top #tweets ul li:last-child {
+    margin-bottom: 0px;
+}
+
+#footer-top #contact-us li {
+    margin-bottom: 16px;
+}
+
+#footer-top #contact-us li .fa {
+    font-size: 20px;
+    width: 25px;
+    margin-right: 7px;
+}
+
+#footer-top #f-newsletter form {
+    margin-top: 20px;
+}
+
+#footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#footer-bottom p, #footer-bottom ul {
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+#footer-bottom li:first-child {
+    position: relative;
+    padding-right: 10px;
+}
+
+#footer-bottom li:first-child:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 15px;
+    width: 1px;
+    display: block;
+}
+
+/***************** FOOTER-2 ***************/
+
+#footer-top.footer-2 .footer-heading, #footer-top.footer-2 .footer-heading span {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+#footer-top.footer-2 p, #footer-top.footer-2 ul li {
+    font-size: 14px;
+}
+
+#footer-top.footer-2 #more-about li a {
+    font-size: 28px;
+}
+
+#footer-top.footer-2 #tweets ul li .tweet .fa {
+    font-size: 28px;
+    margin-right: 10px;
+    position: relative;
+    top: 8px;
+    float: left;
+}
+
+#footer-top.footer-2 #tweets ul li .tweet {
+    height: 40px;
+}
+
+#footer-top.footer-2 #tweets li .date {
+    font-size: 14px;
+    margin-top: 8px;
+    display: block;
+}
+
+#footer-top.footer-2 #useful-links ul li {
+    font-size: 16px;
+}
+
+#footer-top.footer-2 #contact-us li, #footer-top.footer-2 #contact-us li p {
+    font-size: 18px;
+}
+
+#footer-top.footer-2 #contact-us li span {
+    font-size: 20px;
+    float: left;
+    padding-top: 3px;
+}
+
+#footer-top.footer-2 #contact-us li p {
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+#footer-bottom.footer-2 {
+    background: #000;
+}
+
+#footer-bottom.footer-2 p, #footer-bottom.footer-2 ul {
+    font-size: 17.25px;
+    font-weight: bold;
+}
+
+
+@media(min-width:1200px) {
+    #mynavbar-3 .navbar-nav>li>a {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px 0px;
+    }
+}
+
+#mynavbar-3 .nav>li>a {
+    padding: 10px 0px !important;
+}
+
+.search {
+    margin: auto;
+}
+
+@media (min-width: 1200px) {
+    #mynavbar-4 .navbar-nav>li>a {
+        padding: 30px 15px 26px !important;
+    }
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+}
+
+#owl-testimonial-4 .item .reviewer-text small {
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 18px;
+    display: block;
+}
+
+blockquote .small:before, blockquote footer:before, blockquote small:before {
+    content: '\2014 \00A0';
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #ffffff !important;
+    float: right;
+    margin-top: 14px;
+}
+#mynavbar-3 .navbar-toggler {
+    color: #000000 !important;
+}
+
+.navbar-toggler .fa {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1200px) {
+    .navbar-header {
+        width: 100%;
+    }
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .flexslider .flex-direction-nav {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+    #footer-top.footer-2 #contact-us li, #footer-top.footer-2 #contact-us li p {
+        font-size: 14px;
+    }
+}
+

@@ -1,0 +1,336 @@
+/* ----------------------------------------------------
+Theme Name:		HelpdeskSystem - HTML & Bootstrap Template
+Version:		1.0.3
+Author:			SamuelNjiiri
+------------------------------------------------------- */
+
+
+/* ======================================================
+	TABLE OF CONTENTS
+   ====================================================== */
+
+/**
+
+* 1.0	Settings
+* 1.1	MY-NAVBAR
+* 1.2   Header
+* 1.3	Newsletter
+* 1.4	Footer
+**/
+
+/* -----------------------------------------------------
+		Settings
+   ----------------------------------------------------- */
+
+p{
+	color:grey;
+}
+
+.btn-black{
+	background-color:#1d2127;
+	color:white;
+	border-color:#1d2127;
+}
+
+
+/**************** MY-NAVBAR ***************/
+
+.my-navbar{
+	border:0px;
+	border-radius:0px;
+}
+
+.my-navbar .navbar-header .navbar-toggle {
+	background:grey;
+	border:0;
+}
+
+.my-navbar .navbar-header .navbar-brand span{
+  color:#008fe2;
+}
+
+.my-navbar .navbar-collapse{
+	border-color:transparent;
+}
+
+.my-navbar .nav > li > a{
+	color:#3d3d3d;
+}
+
+.my-navbar .navbar-nav > li.dropdown.active.open > a, 
+.my-navbar .navbar-nav > li.dropdown.active > a:hover,
+.my-navbar .navbar-nav > li.dropdown.open > a, 
+.my-navbar .navbar-nav > li.dropdown.open > ul.dropdown-menu > a:hover{
+	color:#3d3d3d;
+  	background:none;
+}
+
+.my-navbar .navbar-nav li .dropdown-menu{
+	border-radius:0px;
+	border:0px;
+	background:#f7f7f7;
+}
+
+.my-navbar .navbar-nav li .dropdown-menu li{
+	border-bottom:1px solid #e6e6e6;
+}
+
+.my-navbar .navbar-nav li .dropdown-menu li:last-child{
+	border-bottom:0px;
+}
+
+.my-navbar .navbar-nav li .dropdown-menu li a{
+	color:#777;
+}
+
+.my-navbar .navbar-nav li .dropdown-menu li a:hover,
+.my-navbar .navbar-nav li .dropdown-menu li a:focus,
+.my-navbar .navbar-nav li .dropdown-menu li.active a,
+.my-navbar .navbar-nav li .dropdown-menu li.active a:hover {
+	background:#f0f0f0;
+	color:#008fe2;
+}
+
+.my-navbar .navbar-search-link > li:last-child a{
+	border:1px solid #faa61a;
+	color:#faa61a;
+	border-radius:100%;
+}
+
+.my-navbar .navbar-search-link > li:last-child a:hover{
+	background:#faa61a;
+	color:white;
+}
+
+@media(max-width:1199px){
+	
+	.my-navbar .navbar-nav{
+		border-top:1px solid #f0f0f0;
+	}
+	
+	.my-navbar .nav > li{
+		border-bottom:1px solid #f0f0f0;
+	}
+}
+
+@media(max-width:767px){
+	
+	.my-navbar .navbar-nav > li{
+		color:#3d3d3d;
+	}
+	
+	.my-navbar .navbar-nav > li.active > a{
+		background:transparent;
+	}
+	
+	.my-navbar .navbar-nav > li.dropdown.active.open > a, 
+	.my-navbar .navbar-nav > li.dropdown.active > a:hover,
+	.my-navbar .navbar-nav > li.dropdown.open > a, 
+	.my-navbar .navbar-nav > li.dropdown.open > ul.dropdown-menu > a:hover{
+		color:#3d3d3d;
+		background:none;
+	}
+	
+	.my-navbar.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.my-navbar.navbar-default li .dropdown-menu > li a:hover,
+	.my-navbar.navbar-default .navbar-nav li .dropdown-menu > li a:focus,
+	.my-navbar.navbar-default .navbar-nav li .dropdown-menu > li.active a,
+	.my-navbar.navbar-default .navbar-nav li .dropdown-menu > li.active a:hover {
+		background:#f0f0f0;
+		color:#008fe2;
+	}
+}
+
+/***************** HEADER **************/
+
+#header-3 #header-top .hdr-top-bdr{
+	border-bottom:1px solid #f2f2f2;
+}
+
+#header-3 #header-top #info li{
+	color:#444444;
+}
+
+#header-3 #header-top .fa{
+	color:#008fe2;
+}
+
+#mynavbar-3{
+	background:white;
+}
+
+#mynavbar-3.affix {
+	box-shadow:0px 2px 5px rgba(0,0,0,0.2);
+}
+	
+#mynavbar-3 .navbar-brand{
+	color:#2f2f2f;
+}
+
+#mynavbar-3 .navbar-header .header-search .fa{
+	color:#008fe2;
+}
+
+#mynavbar-3 .navbar-toggle span{
+	background:#2f2f2f;
+}
+
+#mynavbar-3 .nav > li:last-child a{
+	color:#008fe2;
+}
+
+#mynavbar-3 .nav > li > a:hover,
+#mynavbar-3 .nav > li > a:focus,
+#mynavbar-3 .nav > li > a:focus:hover {
+	color: #008fe2;
+}
+
+#mynavbar-3 .nav > li.active > a,
+#mynavbar-3 .nav > li.active > a:focus,
+#mynavbar-3 .nav > li.active > a:hover,
+#mynavbar-3 .nav > li.active > a:focus:hover  {
+ 	color: #008fe2;
+	background-color: transparent;
+}
+
+#mynavbar-3 .navbar-nav > li.dropdown.active.open > a, 
+#mynavbar-3 .navbar-nav > li.dropdown.active > a:hover,
+#mynavbar-3 .navbar-nav > li.dropdown.open > a, 
+#mynavbar-3 .navbar-nav > li.dropdown.open > ul.dropdown-menu > a:hover{
+	color:#008fe2;
+  	background:none;
+}
+
+@media(min-width:1200px){
+	
+	#mynavbar-3 .nav > li > a{
+		border-bottom:2px solid transparent;
+	}
+	
+	#mynavbar-3 .nav > li.active > a .link-line{
+		border-bottom:2px solid #008fe2;
+	}	
+}
+
+@media(max-width:1199px){
+	
+	#mynavbar-3 .nav > li.active > a{
+		border-bottom:2px solid #008fe2;
+	}
+}
+
+/* -----------------------------------------------------
+		WELCOME
+   ----------------------------------------------------- */
+
+#newsletter{
+	background:linear-gradient(rgba(0, 143, 226,0.8),rgba(0, 143, 226,0.8)),url(../images/newsletter.jpg) center center no-repeat;
+	background-size:cover;
+	color:white;
+}
+
+#newsletter .fa{
+	background:#1d2127;
+	color:white;
+	border-radius:100%;
+}
+
+#newsletter hr{
+	border:2px solid white;
+}
+
+#newsletter form input{
+	border-radius:30px 0px 0px 30px;
+	border:0px;
+}
+
+#newsletter form .input-group-btn .btn{
+	border-radius:0px 30px 30px 0px;
+}
+
+#newsletter form .input-group-btn .btn-black:hover{
+	background:#0081cc;
+	color:white;
+}
+
+/************** NEWSLETTER-2 **************/
+
+#newsletter.newsletter-2 .fa,
+#newsletter.newsletter-2 form input,
+#newsletter.newsletter-2 form .btn{
+	border-radius:0px;
+}
+
+/* -----------------------------------------------------
+		Footer
+   ----------------------------------------------------- */
+   
+#footer-top{
+	background:#1d2127;
+	color:#999999;
+}
+
+#more-about h2 span{
+	color:#008fe2;
+}
+
+#footer-top a:hover{
+	color:#b3b3b3;
+}
+
+#footer-top #tweets li .date{
+	color:#a6a6a6;
+}
+
+#footer-top #more-about p,
+#footer-top a,
+#footer-top #contact-us li{
+	color:#737373;
+}
+
+#footer-top #f-newsletter form input{
+	background:#2b313b;
+	border:0px;
+	box-shadow:none;
+	color:white;
+}
+
+#footer-top #f-newsletter form .btn{
+	background:#2b313b;
+}
+
+#footer-top #f-newsletter form .btn:hover{
+	background:#008fe2;
+	color:white;
+}
+
+#footer-bottom{
+	background:#0b0c0f;
+}
+
+#footer-bottom p,
+#footer-bottom a{
+	color:#4d4d4d;
+}
+
+#footer-bottom li:first-child:after{
+	background:#4d4d4d;
+}
+
+/***************** FOOTER-2 ***************/
+
+#footer-top.footer-2 .footer-heading,
+#footer-top.footer-2 .footer-heading span{
+	font-size:24px;
+	font-weight:900;
+}
+
+#footer-top.footer-2 #tweets li .date{
+	color:white;
+}
+
+#footer-bottom.footer-2 p,
+#footer-bottom.footer-2 a{
+	color:#838383;
+}
+

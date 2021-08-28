@@ -1,0 +1,51 @@
+
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'/>
+    <title>ONLINE STAFF HELPDESK SYSTEM</title>
+    {% load static %}
+    <link type="text/css" rel="stylesheet"  href="{% static 'account/css/style.css' %}"/>
+</head>
+<body>
+     <center>
+        <div class="base">
+            <div id="logo">
+                <img src="{% static 'account/imag/tempsnip.png' %}"t width="200" height="200" />
+            </div>
+            <div id="info1">
+                <b>Staff HelpDesk System</b>
+            </div>
+            <div id="info2">
+                Sign in to continue to Staff Helpdesk System
+            </div>
+            <div id="form1">
+                <form method="POST">
+                    {% csrf_token %}
+                    {{help_text}}
+                    <div id="form-img">
+                        <img src="{% static 'account/imag/profile-img.png' %}" width="99" height="99" />
+                    </div>
+                    <div id="mailbox">
+                        <input placeholder="Enter Staff Id" type="mail" name="staff_id" style="width:270px; height:42px; border: solid 1px #c2c4c6; font-size:16px; padding-left:8px;" />
+                    </div>
+                    <div id="mailbox">
+                        <input placeholder="Enter Password" type="password" name="password" style="width:270px; height:42px; border: solid 1px #c2c4c6; font-size:16px; padding-left:8px;" />
+                    </div>
+                    <div>
+                        <input type="submit" id="button2" value="submit" />
+                    </div>
+                </form>
+                
+            </div>
+            <button type="button" class="btn btn-primary btn-lg"  style="width:178px; height:42px; border: solid 1px #c2c4c6; font-size:16px; padding-left:8px;"><big><strong><a href="{% url 'register' %}">Create account</a></strong></big></button>
+           <!-- <button type="button" class="btn btn-primary btn-lg" style="width:178px; height:42px; border: solid 1px #c2c4c6; font-size:16px; padding-left:8px;"><big><strong><a href="#">Forgot password</a></strong></big></button>-->
+                <div id="info5">
+                    With Online Staff Helpdesk System everything is posible 
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>

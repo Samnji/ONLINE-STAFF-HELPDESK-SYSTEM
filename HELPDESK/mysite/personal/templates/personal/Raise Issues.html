@@ -1,0 +1,85 @@
+{% extends 'personal/Main Page.html'%}
+{% block content %}
+    <style type="text/css">
+        
+            .table{
+                font-size: 23px; 
+                text-align: center;
+                width: 95%;
+                margin: auto;
+                
+            }
+            .table tr:nth-child(odd){
+                background: #B8CAE4
+
+            }
+
+            .table tr:nth-child(even){
+                background: #dae5f4
+
+            }
+            th{
+                background-color: #337ab7;  
+                color: white;
+            }
+            .display_table{
+                border-bottom-right-radius: 20px;
+                font-size: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 20px;
+                box-shadow: 12px 12px 20px 6px #2e6da4;
+            }
+            .heading{
+                font-family: helvetica;
+                color: #337ab7;
+                font-size: 50px;
+                text-align: center;
+                width: 1000px;
+                text-shadow: 6px 6px 6px #c9c6c6;
+                display: block;
+                font-weight: bolder;
+            }
+
+            .main{
+                
+                padding: 0px 10px;
+
+            }
+
+    </style>
+
+                <div class="main">
+                     <div class="heading">{{heading}}</div>
+                                <div class="display_table">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Task</th>
+                                                <th>Feedback</th>
+                                            </tr>
+                                        </thead>
+                                        {% for instance in queryset %}
+                                            <tr>
+                                                <td>{{ instance.ID }}</td>
+                                                <td>{{ instance.F_Name }}</td>
+                                                <td>{{ instance.L_Name }}</td>
+                                                <td>{{ instance.task }}</td>
+                                                <td>{{ instance.feedback }}</td>
+                                            </tr>
+                                        {% endfor %}
+                                        
+                                    </table>
+                                </div>
+                </div>
+            </div>
+
+               
+                
+
+
+{% endblock %}
+    
